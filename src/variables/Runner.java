@@ -34,5 +34,19 @@ public class Runner {
 
         System.out.println(i++);
         System.out.println(++i);
+
+        System.out.println('a' + 'b');
+        // concatenating two strings to make one big one
+        System.out.println("a" + "b");
+        System.out.println("a" + 'b');
+
+        int z = 99;
+
+        System.out.println("Z: " + z);
+        System.out.println(z++);
+        System.out.println("Z: " + z);
+        System.out.println(++z);
+        System.out.println("Z: " + z);
+
     }
 }
