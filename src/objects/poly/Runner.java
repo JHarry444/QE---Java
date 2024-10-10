@@ -14,6 +14,14 @@ public class Runner {
         d.speak();
 
         c.speak();
-        Pet p = new Pet();
+
+        System.out.println(d.getInfo());
+        System.out.println(c.getInfo());
+
+        System.out.println(d);
+        System.out.println(c);
+
+        int[] demo = new int[10];
+        System.out.println(demo);
     }
 }

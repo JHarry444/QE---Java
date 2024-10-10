@@ -1,6 +1,6 @@
 package objects.inheritance;
 
-public abstract class Pet{
+public abstract class Pet extends Object{
 
     private String name;
     private int age;
@@ -31,6 +31,10 @@ public abstract class Pet{
         return "My name is " + name + " and I am a " + age + " years old " + breed;
     }
 
+    @Override
+    public String toString() {
+        return "My name is " + name + " and I am a " + age + " years old " + breed;
+    }
     public String getName() {
         return name;
     }

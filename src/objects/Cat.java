@@ -21,6 +21,17 @@ public class Cat extends Pet {
 //        setAge(age);
 //        setBreed(breed); // NOT the optimal way but fine for now
     }
+
+    public String getInfo() {
+        return "My name is " + getName() + " and I am a " + getAge() + " years old " + getBreed()
+                + " with " + noOfLives +" lives left";
+    }
+
+    @Override
+    public String toString() {
+        return "My name is " + getName() + " and I am a " + getAge() + " years old " + getBreed()
+                + " with " + noOfLives +" lives left";
+    }
     @Override
     public void speak() {
         System.out.println("MROWR");
