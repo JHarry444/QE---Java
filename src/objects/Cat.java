@@ -7,15 +7,22 @@ public class Cat extends Pet {
     private int noOfLives = 9;
 
     public Cat() {
-
+        super();
     }
 
     public Cat(String name, int age, String breed) {
-        setName(name);
-        setAge(age);
-        setBreed(breed); // NOT the optimal way but fine for now
+        super(name, age, breed);
     }
-    public void meow() {
+
+    public Cat(String name, int age, String breed, int noOfLives) {
+        super(name, age, breed); // HAS to be first line in every constructor
+        this.noOfLives = noOfLives;
+//        setName(name);
+//        setAge(age);
+//        setBreed(breed); // NOT the optimal way but fine for now
+    }
+    @Override
+    public void speak() {
         System.out.println("MROWR");
     }
 

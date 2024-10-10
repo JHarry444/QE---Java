@@ -18,7 +18,7 @@ public class Runner {
 //        c.setBreed("Siamese");
 //        c.setName("Fluffy");
 
-        c.meow();
+        c.speak();
 
         System.out.println(c.getInfo());
 

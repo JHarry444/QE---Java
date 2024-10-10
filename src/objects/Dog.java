@@ -13,7 +13,8 @@ public class Dog extends Pet {
         setAge(age);
         setBreed(breed); // NOT the optimal way but fine for now
     }
-    void bark() {
+    @Override // shows that this method is overriding another
+    public void speak() {
         System.out.println("Woof");
     }
 
